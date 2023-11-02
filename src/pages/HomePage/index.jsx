@@ -7,6 +7,7 @@ import { Uloha6 } from '../../components/Uloha6';
 import { Uloha7 } from '../../components/Uloha7';
 import { Uloha8 } from '../../components/Uloha8';
 import { ZaverecnyBonus1 } from '../../components/ZaverecnyBonus1';
+import { ZaverecnyBonus2 } from '../../components/ZaverecnyBonus2';
 
 import './style.css';
 
@@ -31,5 +32,7 @@ export const HomePage = () => (
     <Uloha8 />
     <h2>Zaverecny Bonus 1</h2>
     <ZaverecnyBonus1 />
+    <h2>Zaverecny Bonus 2</h2>
+    <ZaverecnyBonus2 />
   </div>
 );
