@@ -8,7 +8,7 @@ import './zarovka.css';
 
 export const Uloha1 = () => {
   const [jeZapnuta, setJeZapnuta] = useState(false)
-
+  const toggleLamp = () => setJeZapnuta(!jeZapnuta);
   return (
     <div className="zarovka">
       <img
@@ -19,10 +19,10 @@ export const Uloha1 = () => {
         className="zarovka__ikona"
       />
       <div className="zarovka__tlacitka">
-        <button className="zarovka__tlacitko" disabled={jeZapnuta}>
+        <button className="zarovka__tlacitko" disabled={jeZapnuta} onClick={toggleLamp}>
           zapnout
         </button>
-        <button className="zarovka__tlacitko" disabled={!jeZapnuta}>
+        <button className="zarovka__tlacitko" disabled={!jeZapnuta} onClick={toggleLamp}>
           vypnout
         </button>
       </div>
