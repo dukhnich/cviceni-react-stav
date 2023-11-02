@@ -4,6 +4,7 @@ import { Uloha3 } from '../../components/Uloha3';
 import { Uloha4 } from '../../components/Uloha4';
 import { Uloha5 } from '../../components/Uloha5';
 import { Uloha6 } from '../../components/Uloha6';
+import { Uloha7 } from '../../components/Uloha7';
 import './style.css';
 
 export const HomePage = () => (
@@ -21,5 +22,7 @@ export const HomePage = () => (
     <Uloha5 />
     <h2>Úloha 6</h2>
     <Uloha6 />
+    <h2>Úloha 7</h2>
+    <Uloha7 />
   </div>
 );
