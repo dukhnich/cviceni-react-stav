@@ -9,6 +9,7 @@ import { Uloha8 } from '../../components/Uloha8';
 import { ZaverecnyBonus1 } from '../../components/ZaverecnyBonus1';
 import { ZaverecnyBonus2 } from '../../components/ZaverecnyBonus2';
 import { ZaverecnyBonus3 } from '../../components/ZaverecnyBonus3';
+import { ZaverecnyBonus4 } from '../../components/ZaverecnyBonus4';
 
 import './style.css';
 
@@ -37,5 +38,7 @@ export const HomePage = () => (
     <ZaverecnyBonus2 />
     <h2>Zaverecny Bonus 3</h2>
     <ZaverecnyBonus3 />
+    <h2>Zaverecny Bonus 4</h2>
+    <ZaverecnyBonus4 />
   </div>
 );
