@@ -1,4 +1,3 @@
-import React from 'react'
 import { useCasVSekundach } from './hodiny'
 
 // Zadání: Pomocí předchystané stavové proměnné, která se mění každou sekundu, zobraz aktuální čas ve formátu 7:49:05.
@@ -10,7 +9,13 @@ export const ZaverecnyBonus3 = () => {
 
   return (
     <>
-      Čas právě teď: <b>{casVSekundach}</b>
+      Čas právě teď: <b>
+        {String(Math.floor(casVSekundach / 3600)).padStart(2, '0')}
+        :
+        {String(Math.floor((casVSekundach % 3600) / 60)).padStart(2, '0')}
+        :
+        {String(Math.floor(casVSekundach % 60)).padStart(2, '0')}
+        </b>
     </>
   )
 }
